@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+	--dark-one: #333;
+	--dark-two: #7a7a7a;
+	--main-color: #784cfb;
+	--light-one: #fff;
+	--light-two: #f9fafb;
+	--light-three: #f6f7fb;
+}
+
+/* General Styles */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	position: relative;
+	z-index: 5;
+	max-width: 92rem;
+	padding: 0 4rem;
+	margin: 0 auto;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+.text {
+	font-size: 1.25rem;
+	color: var(--dark-two);
+	line-height: 1.6;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	background-color: var(--light-three);
+	overflow: hidden;
+}
+
+nav {
+	width: 100%;
+	position: relative;
+	z-index: 50;
+}
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	height: 6rem;
+	align-items: center;
+}
+
+.logo {
+	width: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.links ul {
+	display: flex;
+}
+
+.links a {
+	display: inline-block;
+	padding: 0.9rem 1.2rem;
+	color: var(--dark-one);
+	font-size: 1.05rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 1;
+	transition: 0.3s;
+}
+
+.links a.active {
+	background-color: var(--main-color);
+	color: var(--light-one);
+	border-radius: 2rem;
+	font-size: 1rem;
+	padding: 0.8rem 2.1rem;
+	margin-left: 1rem;
+}
+
+.links a:hover {
+	color: var(--main-color);
+}
+
+.links a.active:hover {
+	color: var(--light-one);
+	background-color: #6b44e0;
+}
+
+.header-content .container.grid-2 {
+	grid-template-columns: 2.5fr 3.5fr;
+	min-height: calc(100vh - 6rem);
+	padding-bottom: 2.5rem;
+	text-align: left;
+}
+
+.header-title {
+	font-size: 3.8rem;
+	line-height: 0.8;
+	color: var(--dark-one);
+}
+
+.header-content .text {
+	margin: 2.15rem 0;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.85rem 2rem;
+	background-color: var(--main-color);
+	color: var(--light-one);
+	border-radius: 2rem;
+	font-size: 1.05rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
