@@ -16,5 +16,6 @@ logs
 .vscode/
 *.sw*
 
-# ignore catalog
+# ignore catalogs and files
 .history
+.gitignore
